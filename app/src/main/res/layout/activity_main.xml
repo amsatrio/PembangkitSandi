@@ -49,7 +49,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Pembangkit Sandi"
+            android:text="@string/app_name"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -60,7 +60,8 @@
             android:layout_height="wrap_content"
             android:visibility="gone"
             app:srcCompat="@drawable/ic_darkmode"
-            tools:ignore="VectorDrawableCompat" />
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/buttonDarkTheme" />
     </LinearLayout>
 
     <LinearLayout
@@ -122,7 +123,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/switch_extended_ascii"
-            android:visibility="gone"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <EditText
@@ -132,7 +132,8 @@
             android:ems="10"
             android:hint="@string/editTextTextYourCustomChar"
             android:inputType="textPersonName"
-            tools:ignore="LabelFor" />
+            tools:ignore="LabelFor"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editTextNumberCountPassword"
@@ -142,7 +143,8 @@
             android:hint="@string/editTextNumberCountPassword"
             android:inputType="number"
             android:maxLength="4"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/buttonGenerate"

@@ -66,11 +66,7 @@ class MainActivity : AppCompatActivity() {
 
         val progressBarGaugePassword: ProgressBar = findViewById(R.id.progressBarGaugePassword)
 
-        var countPassword = 12
 
-        if(editTextNumberCountPassword.text.isNotEmpty()){
-            countPassword = editTextNumberCountPassword.text.toString().toInt()
-        }
 
         var stringTemp = ""
         var stringResult = ""
@@ -106,33 +102,51 @@ class MainActivity : AppCompatActivity() {
         }
 
         var stringExtendedASCII = ""
-        for (i in listOf(128..175)){
+        for (i in listOf(161..254)){
             for (j in i){
                 stringExtendedASCII += j.toChar()
             }
         }
 
+
+        var countPassword: Int
         buttonGenerate.setOnClickListener{
+            textViewResult.text = "Please Wait..."
+            var scorePass = 0
+
+            countPassword = if(editTextNumberCountPassword.text.isNotEmpty()){
+                editTextNumberCountPassword.text.toString().toInt()
+            } else {
+                12
+            }
+
             if(switch09.isChecked){
                 stringTemp += string09
+                scorePass++
             }
             if(switchAZBig.isChecked){
                 stringTemp += stringAZBig
+                scorePass++
             }
             if(switchAZSmall.isChecked){
                 stringTemp += stringAZSmall
+                scorePass++
             }
             if(switchCustom1.isChecked){
                 stringTemp += stringCustom1
+                scorePass += 2
             }
             if(switchCustom2.isChecked){
                 stringTemp += stringCustom2
+                scorePass += 2
             }
             if(switchCustom3.isChecked){
                 stringTemp += stringCustom3
+                scorePass += 2
             }
             if(switchExtendedASCII.isChecked){
                 stringTemp += stringExtendedASCII
+                scorePass += 2
             }
             if(editTextTextYourCustomChar.text.isNotEmpty()){
                 stringTemp += editTextTextYourCustomChar.text
@@ -141,6 +155,9 @@ class MainActivity : AppCompatActivity() {
                 stringTemp += string09
                 stringTemp += stringAZBig
                 stringTemp += stringAZSmall
+                scorePass += 3
+            } else {
+                scorePass += 2
             }
 
 
@@ -148,64 +165,73 @@ class MainActivity : AppCompatActivity() {
                 countPassword = editTextNumberCountPassword.text.toString().toInt()
             }
 
-
             for(i in 0 until countPassword){
                 stringResult += stringTemp[(Math.random()*stringTemp.length).toInt()]
             }
             textViewResult.text = stringResult
             stringTemp = ""
 
-            val byteTempArray = stringResult.toByteArray(Charset.defaultCharset())
-            val byteTemp = byteTempArray.sum()/8
+            for(i in 2..13){
+                if(scorePass == i){
+                    scorePass += i
+                }
+            }
+
+            var c = 0
+            for (i in stringResult.indices) {
+                c += stringResult.toByteArray(Charsets.ISO_8859_1)[i].toUByte().toInt()
+            }
+            val byteTemp = scorePass*c/(13*8)
+
 
             when {
-                byteTemp <= 80 -> {
+                byteTemp <= 100 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FFE91E63"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 10
                     textViewGaugePassword.text = "$byteTemp , Weak"
                 }
-                byteTemp in 81..160 -> {
+                byteTemp in 101..200 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FFFF9800"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 30
                     textViewGaugePassword.text = "$byteTemp , Medium"
                 }
-                byteTemp in 161..320 -> {
+                byteTemp in 201..400 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FFFFC107"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 50
                     textViewGaugePassword.text = "$byteTemp , Strong"
                 }
-                byteTemp in 321..480 -> {
+                byteTemp in 401..600 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF4CAF50"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 70
                     textViewGaugePassword.text = "$byteTemp , Super"
                 }
-                byteTemp in 481..800 -> {
+                byteTemp in 601..900 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF00BCD4"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 90
                     textViewGaugePassword.text = "$byteTemp , Super Strong"
                 }
-                byteTemp in 801..10000 -> {
+                byteTemp in 901..16000 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF3F51B5"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 99
-                    textViewGaugePassword.text = "$byteTemp , Strongest"
+                    textViewGaugePassword.text = "$byteTemp , Ultra Strong"
                 }
                 else -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF9C27B0"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 100
-                    textViewGaugePassword.text = "$byteTemp , Ahlan Wa Sahlan"
+                    textViewGaugePassword.text = "$byteTemp , :)"
                 }
             }
             stringResult = ""
         }
 
-        textViewResult.setOnClickListener{
+        textViewResult.setOnLongClickListener{
             clipData = ClipData.newPlainText("text", textViewResult.text)
             clipData?.let { it1 -> clipboardManager?.setPrimaryClip(it1) }
 
@@ -216,11 +242,12 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFinish() {
-                    clipData = ClipData.newPlainText("", "")
+                    clipData = ClipData.newPlainText("text", "")
                     clipData?.let { it1 -> clipboardManager?.setPrimaryClip(it1) }
                 }
             }
             timer.start()
+            true
         }
 
         buttonCopy.setOnClickListener{
@@ -234,7 +261,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFinish() {
-                    clipData = ClipData.newPlainText("", "")
+                    clipData = ClipData.newPlainText("text", "")
                     clipData?.let { it1 -> clipboardManager?.setPrimaryClip(it1) }
                 }
             }

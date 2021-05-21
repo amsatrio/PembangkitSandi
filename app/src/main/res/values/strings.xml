@@ -30,6 +30,7 @@
     <string name="switchCustom3">ASCII 3</string>
     <string name="editTextNumberCountPassword">Enter Total Char Password (Default 12 Max 9999)</string>
     <string name="buttonGenerate">Generate</string>
+    <string name="buttonDarkTheme">Dark Theme</string>
     <string name="textViewResult">Result Here</string>
     <string name="textViewGaugePassword">Strength Password</string>
     <string name="buttonCopy">Copy Password</string>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2021 A M Satrio
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  ~
+  -->
+
+<resources>
+    <string name ="switchCustom1"> ASCII 1 </string>
+    <string name ="switchCustom2"> ASCII 2 </string>
+    <string name ="switchCustom3"> ASCII 3 </string>
+    <string name ="editTextNumberCountPassword">輸入總字符密碼（默認12個最大值9999）</string>
+    <string name ="buttonGenerate">生成</string>
+    <string name ="textViewResult">結果在這裡</string>
+    <string name ="textViewGaugePassword">強度密碼</string>
+    <string name ="buttonCopy">複製密碼</string>
+    <string name ="switch09"> 0–9 </string>
+    <string name ="switchAZSmall"> a-z </string>
+    <string name ="switchAZBig"> A-Z </string>
+    <string name ="editTextTextYourCustomChar">輸入您的自定義字符</string>
+    <string name ="switch_extended_ascii">擴展的ASCII </string>
+
+    <string name ="string_progress">請稍候… </string>
+    <string name ="string_notif_copy">您的密碼已復製到剪貼板。 16秒後清除</string>
+
+
+    <string name ="gauge_weak">弱</string>
+    <string name ="gauge_medium">中等</string>
+    <string name ="gauge_strong">很強</string>
+    <string name ="gauge_super">超級</string>
+    <string name ="gauge_super_strong">超強</string>
+    <string name ="gauge_ultra_strong">超強</string>
+
+    <!--關於活動-->
+    <string name ="string_privacy_policy">隱私政策</string>
+    <string name ="string_open_source">開源</string>
+    <string name ="string_source_program">源程序可以在</string>上找到
+    <string name ="text_view_about">關於</string>
+</resources>

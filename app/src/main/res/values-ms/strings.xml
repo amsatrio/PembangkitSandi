@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2021 A M Satrio
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  ~
+  -->
+
+<resources>
+    <string name = "switchCustom1"> ASCII 1 </string>
+    <string name = "switchCustom2"> ASCII 2 </string>
+    <string name = "switchCustom3"> ASCII 3 </string>
+    <string name = "editTextNumberCountPassword"> Masukkan Total Password Char (Default 12 Max 9999) </string>
+    <string name = "buttonGenerate"> Hasilkan </string>
+    <string name = "textViewResult"> Hasilnya Di Sini </string>
+    <string name = "textViewGaugePassword"> Kata Laluan Kekuatan </string>
+    <string name = "buttonCopy"> Salin Kata Laluan </string>
+    <string name = "switch09"> 0–9 </string>
+    <string name = "switchAZSmall"> a-z </string>
+    <string name = "switchAZBig"> A-Z </string>
+    <string name = "editTextTextYourCustomChar"> Masukkan Karakter Kustom Anda </string>
+    <string name = "switch_extended_ascii"> ASCII yang dilanjutkan </string>
+
+    <string name = "string_progress"> Harap Tunggu … </string>
+    <string name = "string_notif_copy"> Kata Laluan Anda Disalin ke Papan Keratan. Dibersihkan selepas 16 saat </string>
+
+
+    <string name = "gauge_weak"> Lemah </string>
+    <string name = "gauge_medium"> Medium </string>
+    <string name = "gauge_strong"> Kuat </string>
+    <string name = "gauge_super"> Super </string>
+    <string name = "gauge_super_strong"> Super Kuat </string>
+    <string name = "gauge_ultra_strong"> Ultra Kuat </string>
+
+    <!-- Tentang Aktiviti -->
+    <string name = "string_privacy_policy"> Dasar Privasi </string>
+    <string name = "string_open_source"> Sumber Terbuka </string>
+    <string name = "string_source_program"> Program sumber boleh didapati di </string>
+    <string name = "text_view_about"> Tentang </string>
+</resources>

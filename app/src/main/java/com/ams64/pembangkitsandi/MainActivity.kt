@@ -28,12 +28,14 @@ package com.ams64.pembangkitsandi
 import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipboardManager
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import java.nio.charset.Charset
 
 class MainActivity : AppCompatActivity() {
     private var clipData: ClipData? = null
@@ -111,7 +113,7 @@ class MainActivity : AppCompatActivity() {
 
         var countPassword: Int
         buttonGenerate.setOnClickListener{
-            textViewResult.text = "Please Wait..."
+            textViewResult.text = getString(R.string.string_progress)
             var scorePass = 0
 
             countPassword = if(editTextNumberCountPassword.text.isNotEmpty()){
@@ -179,7 +181,7 @@ class MainActivity : AppCompatActivity() {
 
             var c = 0
             for (i in stringResult.indices) {
-                c += stringResult.toByteArray(Charsets.ISO_8859_1)[i].toUByte().toInt()
+                c += stringResult[i].toInt()
             }
             val byteTemp = scorePass*c/(13*8)
 
@@ -189,43 +191,43 @@ class MainActivity : AppCompatActivity() {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FFE91E63"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 10
-                    textViewGaugePassword.text = "$byteTemp , Weak"
+                    textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_weak)}"
                 }
-                byteTemp in 101..200 -> {
+                byteTemp in 101..300 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FFFF9800"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 30
-                    textViewGaugePassword.text = "$byteTemp , Medium"
+                    textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_medium)}"
                 }
-                byteTemp in 201..400 -> {
+                byteTemp in 301..500 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FFFFC107"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 50
-                    textViewGaugePassword.text = "$byteTemp , Strong"
+                    textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_strong)}"
                 }
-                byteTemp in 401..600 -> {
+                byteTemp in 501..800 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF4CAF50"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 70
-                    textViewGaugePassword.text = "$byteTemp , Super"
+                    textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_super)}"
                 }
-                byteTemp in 601..900 -> {
+                byteTemp in 801..1300 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF00BCD4"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 90
-                    textViewGaugePassword.text = "$byteTemp , Super Strong"
+                    textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_super_strong)}"
                 }
-                byteTemp in 901..16000 -> {
+                byteTemp in 1301..24000 -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF3F51B5"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 99
-                    textViewGaugePassword.text = "$byteTemp , Ultra Strong"
+                    textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_ultra_strong)}"
                 }
                 else -> {
                     progressBarGaugePassword.progressDrawable.setColorFilter(
                         Color.parseColor("#FF9C27B0"), android.graphics.PorterDuff.Mode.SRC_IN)
                     progressBarGaugePassword.progress = 100
-                    textViewGaugePassword.text = "$byteTemp , :)"
+                    textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_smile)}"
                 }
             }
             stringResult = ""
@@ -235,7 +237,7 @@ class MainActivity : AppCompatActivity() {
             clipData = ClipData.newPlainText("text", textViewResult.text)
             clipData?.let { it1 -> clipboardManager?.setPrimaryClip(it1) }
 
-            Toast.makeText(this, "Your Password Copied to Clipboard. Cleared after 16 second", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.string_notif_copy), Toast.LENGTH_SHORT).show()
 
             val timer = object: CountDownTimer(16000,1000){
                 override fun onTick(millisUntilFinished: Long) {
@@ -254,7 +256,7 @@ class MainActivity : AppCompatActivity() {
             clipData = ClipData.newPlainText("text", textViewResult.text)
             clipData?.let { it1 -> clipboardManager?.setPrimaryClip(it1) }
 
-            Toast.makeText(this, "Your Password Copied to Clipboard. Cleared after 16 second", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.string_notif_copy), Toast.LENGTH_SHORT).show()
 
             val timer = object: CountDownTimer(16000,1000){
                 override fun onTick(millisUntilFinished: Long) {
@@ -268,18 +270,49 @@ class MainActivity : AppCompatActivity() {
             timer.start()
         }
 
-        //dark theme
-        val linearLayoutGeneral: LinearLayout = findViewById(R.id.linearLayoutGeneral)
-        val imageButtonDarkTheme: ImageButton = findViewById(R.id.imageButtonDarkTheme)
-        var darkTheme = false
-        imageButtonDarkTheme.setOnClickListener{
-            darkTheme = if(darkTheme){
-                linearLayoutGeneral.setBackgroundColor(Color.WHITE)
-                false
-            } else {
-                linearLayoutGeneral.setBackgroundColor(Color.GRAY)
+
+
+//        //dark theme
+//        val linearLayoutGeneral: LinearLayout = findViewById(R.id.linearLayoutGeneral)
+//        val imageButtonDarkTheme: ImageButton = findViewById(R.id.imageButtonDarkTheme)
+//        var darkTheme = false
+//        imageButtonDarkTheme.setOnClickListener{
+//            darkTheme = if(darkTheme){
+//                linearLayoutGeneral.setBackgroundColor(Color.WHITE)
+//                false
+//            } else {
+//                linearLayoutGeneral.setBackgroundColor(Color.GRAY)
+//                true
+//            }
+//        }
+    }
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.option_menu, menu)
+        return true
+    }
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
+        return super.onPrepareOptionsMenu(menu)
+    }
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle presses on the action bar menu items
+        return when (item.itemId) {
+            R.id.about -> {
+                val intentAboutActivity =
+                    Intent(this, AboutActivity::class.java)
+                startActivity(intentAboutActivity)
                 true
             }
+            else -> return super.onOptionsItemSelected(item)
         }
+
     }
 }

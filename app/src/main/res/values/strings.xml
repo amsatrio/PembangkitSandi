@@ -24,20 +24,39 @@
   -->
 
 <resources>
-    <string name="app_name">Pembangkit Sandi</string>
+    <string name="app_name" translatable="false">Pembangkit Sandi</string>
     <string name="switchCustom1">ASCII 1</string>
     <string name="switchCustom2">ASCII 2</string>
     <string name="switchCustom3">ASCII 3</string>
     <string name="editTextNumberCountPassword">Enter Total Char Password (Default 12 Max 9999)</string>
     <string name="buttonGenerate">Generate</string>
-    <string name="buttonDarkTheme">Dark Theme</string>
     <string name="textViewResult">Result Here</string>
     <string name="textViewGaugePassword">Strength Password</string>
     <string name="buttonCopy">Copy Password</string>
     <string name="switch09">0–9</string>
     <string name="switchAZSmall">a-z</string>
     <string name="switchAZBig">A-Z</string>
-    <string name="editTextTextYourCustomChar">Enter Your Custom Char</string>
+    <string name="editTextTextYourCustomChar">Enter Your Custom Character</string>
     <string name="switch_extended_ascii">Extended ASCII</string>
+
+    <string name="string_progress">Please Wait…</string>
+    <string name="string_notif_copy">Your Password Copied to Clipboard. Cleared after 16 second</string>
+
+
+    <string name="gauge_weak">Weak</string>
+    <string name="gauge_medium">Medium</string>
+    <string name="gauge_strong">Strong</string>
+    <string name="gauge_super">Super</string>
+    <string name="gauge_super_strong">Super Strong</string>
+    <string name="gauge_ultra_strong">Ultra Strong</string>
+    <string name="gauge_smile" translatable="false">:)</string>
+
+
+    <!-- About Activity -->
+    <string name="string_privacy_policy">Privacy Policy</string>
+    <string name="string_open_source">Open Source</string>
+    <string name="string_source_program">Source programs can be found on</string>
+    <string name="text_view_about">About</string>
+
 
 </resources>

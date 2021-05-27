@@ -13,10 +13,9 @@ Features:
 8. Clean App, Without Ads
 9. Offline, Without Internet
 
-
 ## Installation
 
-- Android: Clone this git, Build the app using Android Studio, then install the to Android Phone.
+- Android: Clone this git, Build the app using Android Studio, then install the to Android Phone. Or Download the latest version of the application on the **[Google Play Store](https://play.google.com/store/apps/details?id=com.ams64.pembangkitsandi)**
 
 ## How to Use
 

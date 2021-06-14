@@ -36,10 +36,14 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.BlendModeColorFilterCompat
+import androidx.core.graphics.BlendModeCompat
+
 
 class MainActivity : AppCompatActivity() {
     private var clipData: ClipData? = null
     private var clipboardManager: ClipboardManager? = null
+
 
     @SuppressLint("UseSwitchCompatOrMaterialCode", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -181,51 +185,79 @@ class MainActivity : AppCompatActivity() {
 
             var c = 0
             for (i in stringResult.indices) {
-                c += stringResult[i].toInt()
+                c += stringResult[i].code
             }
             val byteTemp = scorePass*c/(13*8)
 
 
             when {
                 byteTemp <= 100 -> {
-                    progressBarGaugePassword.progressDrawable.setColorFilter(
-                        Color.parseColor("#FFE91E63"), android.graphics.PorterDuff.Mode.SRC_IN)
+
+                    progressBarGaugePassword.progressDrawable.colorFilter =
+                        BlendModeColorFilterCompat.
+                        createBlendModeColorFilterCompat(
+                            Color.parseColor("#FFE91E63"),
+                            BlendModeCompat.SRC_ATOP)
                     progressBarGaugePassword.progress = 10
                     textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_weak)}"
                 }
                 byteTemp in 101..300 -> {
-                    progressBarGaugePassword.progressDrawable.setColorFilter(
-                        Color.parseColor("#FFFF9800"), android.graphics.PorterDuff.Mode.SRC_IN)
+                    progressBarGaugePassword.progressDrawable.colorFilter =
+                        BlendModeColorFilterCompat.
+                        createBlendModeColorFilterCompat(
+                            Color.parseColor("#FFFF9800"),
+                            BlendModeCompat.SRC_ATOP)
+
                     progressBarGaugePassword.progress = 30
                     textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_medium)}"
                 }
                 byteTemp in 301..500 -> {
-                    progressBarGaugePassword.progressDrawable.setColorFilter(
-                        Color.parseColor("#FFFFC107"), android.graphics.PorterDuff.Mode.SRC_IN)
+
+                    progressBarGaugePassword.progressDrawable.colorFilter =
+                        BlendModeColorFilterCompat.
+                        createBlendModeColorFilterCompat(
+                            Color.parseColor("#FFFFC107"),
+                            BlendModeCompat.SRC_ATOP)
                     progressBarGaugePassword.progress = 50
                     textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_strong)}"
                 }
                 byteTemp in 501..800 -> {
-                    progressBarGaugePassword.progressDrawable.setColorFilter(
-                        Color.parseColor("#FF4CAF50"), android.graphics.PorterDuff.Mode.SRC_IN)
+
+                    progressBarGaugePassword.progressDrawable.colorFilter =
+                        BlendModeColorFilterCompat.
+                        createBlendModeColorFilterCompat(
+                            Color.parseColor("#FF4CAF50"),
+                            BlendModeCompat.SRC_ATOP)
                     progressBarGaugePassword.progress = 70
                     textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_super)}"
                 }
                 byteTemp in 801..1300 -> {
-                    progressBarGaugePassword.progressDrawable.setColorFilter(
-                        Color.parseColor("#FF00BCD4"), android.graphics.PorterDuff.Mode.SRC_IN)
+
+                    progressBarGaugePassword.progressDrawable.colorFilter =
+                        BlendModeColorFilterCompat.
+                        createBlendModeColorFilterCompat(
+                            Color.parseColor("#FF00BCD4"),
+                            BlendModeCompat.SRC_ATOP)
                     progressBarGaugePassword.progress = 90
                     textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_super_strong)}"
                 }
                 byteTemp in 1301..24000 -> {
-                    progressBarGaugePassword.progressDrawable.setColorFilter(
-                        Color.parseColor("#FF3F51B5"), android.graphics.PorterDuff.Mode.SRC_IN)
+
+                    progressBarGaugePassword.progressDrawable.colorFilter =
+                        BlendModeColorFilterCompat.
+                        createBlendModeColorFilterCompat(
+                            Color.parseColor("#FF3F51B5"),
+                            BlendModeCompat.SRC_ATOP)
                     progressBarGaugePassword.progress = 99
                     textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_ultra_strong)}"
                 }
                 else -> {
-                    progressBarGaugePassword.progressDrawable.setColorFilter(
-                        Color.parseColor("#FF9C27B0"), android.graphics.PorterDuff.Mode.SRC_IN)
+
+                    progressBarGaugePassword.progressDrawable.colorFilter =
+                        BlendModeColorFilterCompat.
+                        createBlendModeColorFilterCompat(
+                            Color.parseColor("#FF9C27B0"),
+                            BlendModeCompat.SRC_ATOP)
                     progressBarGaugePassword.progress = 100
                     textViewGaugePassword.text = "$byteTemp , ${getString(R.string.gauge_smile)}"
                 }

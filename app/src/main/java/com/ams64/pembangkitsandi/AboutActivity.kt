@@ -42,16 +42,23 @@ class AboutActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_about)
         val textViewAbout: TextView = findViewById(R.id.textViewAbout)
-        textViewAbout.text = HtmlCompat.fromHtml("<h4 style=\"text-align: left;\">" +
-                "${getString(R.string.app_name)} [${packageManager.getPackageInfo(packageName, 0).versionName}]</h4>" +
-                "Copyright © 2021 AMS64<br/>" +
-                "&nbsp;<h4 style=\"text-align: left;\">" +
-                "${getString(R.string.string_privacy_policy)}</h4>" +
-                "<a href=https://ams64pro.blogspot.com/p/privacy-policy-foss-app.html>" +
-                "${getString(R.string.string_privacy_policy)}</a><br/>" +
-                "&nbsp;<h4 style=\"text-align: left;\">" +
-                "${getString(R.string.string_open_source)}</h4>${getString(R.string.string_source_program)}&nbsp;" +
-                "<a href=https://github.com/amsatrio/RLCalc rel target=_blank>Github</a>",0)
+        textViewAbout.text = HtmlCompat.fromHtml(
+            "<h4 style=\"text-align: left;\">" +
+                    "${getString(R.string.string_version)}</h4>" +
+                    "${packageManager.getPackageInfo(packageName, 0).versionName}<br/>" +
+
+//                    "&nbsp;<h4 style=\"text-align: left;\">" +
+//                    "${getString(R.string.string_author)}</h4>" +
+//                    "AMS64<br/>" +
+
+                    "&nbsp;<h4 style=\"text-align: left;\">" +
+                    "${getString(R.string.string_privacy_policy)}</h4>" +
+                    "<a href=https://ams64pro.blogspot.com/p/privacy-policy-foss-app.html>" +
+                    "${getString(R.string.string_privacy_policy)}</a><br/>" +
+
+                    "&nbsp;<h4 style=\"text-align: left;\">" +
+                    "${getString(R.string.string_open_source)}</h4>${getString(R.string.string_source_program)}&nbsp;" +
+                    "<a href=https://github.com/amsatrio/PembangkitSandi rel target=_blank>Github</a>",0)
         textViewAbout.movementMethod = LinkMovementMethod.getInstance()
     }
 

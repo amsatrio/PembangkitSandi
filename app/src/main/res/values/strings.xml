@@ -53,10 +53,13 @@
 
 
     <!-- About Activity -->
+    <string name="string_author">Author</string>
+    <string name="string_version">Version</string>
     <string name="string_privacy_policy">Privacy Policy</string>
     <string name="string_open_source">Open Source</string>
     <string name="string_source_program">Source programs can be found on</string>
     <string name="text_view_about">About</string>
+
 
 
 </resources>

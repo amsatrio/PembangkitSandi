@@ -50,6 +50,8 @@
     <string name ="gauge_ultra_strong">超強</string>
 
     <!--關於活動-->
+    <string name = "string_author"> 作者 </string>
+    <string name = "string_version"> 版本 </string>
     <string name ="string_privacy_policy">隱私政策</string>
     <string name ="string_open_source">開源</string>
     <string name ="string_source_program">源程序可以在</string>上找到

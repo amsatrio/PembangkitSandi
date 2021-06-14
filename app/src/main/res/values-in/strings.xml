@@ -50,6 +50,8 @@
     <string name = "gauge_ultra_strong"> Sangat Kuat </string>
 
     <!-- Tentang Aktivitas -->
+    <string name = "string_author"> Penulis </string>
+    <string name = "string_version"> Versi </string>
     <string name = "string_privacy_policy">Kebijakan Privasi</string>
     <string name = "string_open_source">Sumber Terbuka</string>
     <string name = "string_source_program">Program sumber dapat ditemukan di</string>

@@ -27,7 +27,7 @@
     <string name ="switchCustom1"> ASCII 1 </string>
     <string name ="switchCustom2"> ASCII 2 </string>
     <string name ="switchCustom3"> ASCII 3 </string>
-    <string name ="editTextNumberCountPassword">輸入總字符密碼（默認12個最大值9999）</string>
+    <string name ="editTextNumberCountPassword">輸入總字符密碼</string>
     <string name ="buttonGenerate">生成</string>
     <string name ="textViewResult">結果在這裡</string>
     <string name ="textViewGaugePassword">強度密碼</string>
@@ -35,7 +35,8 @@
     <string name ="switch09"> 0–9 </string>
     <string name ="switchAZSmall"> a-z </string>
     <string name ="switchAZBig"> A-Z </string>
-    <string name ="editTextTextYourCustomChar">輸入您的自定義字符</string>
+    <string name="editTextTextRequiredLetters">所需的字母</string>
+    <string name="editTextTextExcludedLetters">排除字母</string>
     <string name ="switch_extended_ascii">擴展的ASCII </string>
 
     <string name ="string_progress">請稍候… </string>
@@ -56,4 +57,162 @@
     <string name ="string_open_source">開源</string>
     <string name ="string_source_program">源程序可以在</string>上找到
     <string name ="text_view_about">關於</string>
+
+    <!-- 幫助活動 -->
+    <string name="text_view_help">幫助</string>
+    <string name="text_view_content_help"><![CDATA[
+<h4 class="western">0-9</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">從</span></font>0<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>9<font face="Noto Serif CJK SC"><span lang="zh-CN">或</span></font>ASCII<font face="Noto Serif CJK SC"><span lang="zh-CN">編號的整數數字為</span></font>48<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>57<font face="Noto Serif CJK SC"><span lang="zh-CN">。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">A-Z</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">從</span></font>A<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>Z<font face="Noto Serif CJK SC"><span lang="zh-CN">或</span></font>ASCII<font face="Noto Serif CJK SC"><span lang="zh-CN">數字的小寫字母從</span></font>97<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>122<font face="Noto Serif CJK SC"><span lang="zh-CN">。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">A-Z</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">從</span></font>A<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>Z<font face="Noto Serif CJK SC"><span lang="zh-CN">或</span></font>ASCII<font face="Noto Serif CJK SC"><span lang="zh-CN">數字的大寫字母從</span></font>65<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>90<font face="Noto Serif CJK SC"><span lang="zh-CN">。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 1</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">符號
+</span></font><b> !"#$%&'()*+,-./</b><font face="Noto Serif CJK SC"><span lang="zh-CN">或</span></font>ASCII<font face="Noto Serif CJK SC"><span lang="zh-CN">編號從</span></font>33<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>47<font face="Noto Serif CJK SC"><span lang="zh-CN">。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 2</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">符號</span></font><b>:;&lt;=&gt;?@</b><font face="Noto Serif CJK SC"><span lang="zh-CN">或</span></font>ASCII<font face="Noto Serif CJK SC"><span lang="zh-CN">編號從</span></font>58<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>64<font face="Noto Serif CJK SC"><span lang="zh-CN">。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 3</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">符號</span></font><b>[\]^_`{|}~</b><font face="Noto Serif CJK SC"><span lang="zh-CN">或</span></font>ASCII<font face="Noto Serif CJK SC"><span lang="zh-CN">編號從</span></font>91<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>96<font face="Noto Serif CJK SC"><span lang="zh-CN">和</span></font>123<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>126<font face="Noto Serif CJK SC"><span lang="zh-CN">。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">擴展</span></font>ASCII</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">符號</span></font><b>¡¢£¤¥¦§¨©ª«¬&shy;®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ</b><font face="Noto Serif CJK SC"><span lang="zh-CN">或</span></font>ASCII<font face="Noto Serif CJK SC"><span lang="zh-CN">編號從</span></font>161<font face="Noto Serif CJK SC"><span lang="zh-CN">到</span></font>254<font face="Noto Serif CJK SC"><span lang="zh-CN">。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">所需的信件</span></font></h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">添加所需的字符</span></font>/<font face="Noto Serif CJK SC"><span lang="zh-CN">字母</span></font>/<font face="Noto Serif CJK SC"><span lang="zh-CN">數字。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">排除了字母</span></font></h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">字符</span></font>/<font face="Noto Serif CJK SC"><span lang="zh-CN">字母</span></font>/<font face="Noto Serif CJK SC"><span lang="zh-CN">數字被排除在一起，不會出現在結果中。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">字母</span></font>/<font face="UKIJ CJK"><span lang="zh-CN">字符數</span></font></h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">在要創建的密碼中輸入字符數。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">默認情況下的總字符是</span></font>12<font face="Noto Serif CJK SC"><span lang="zh-CN">個字符。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">最大字符數可以為</span></font>9999<font face="Noto Serif CJK SC"><span lang="zh-CN">個字符。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">產生</span></font></h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">按鈕創建密碼。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">結果 </span></font>
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">已創建的密碼將顯示在本節中。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">密碼強度</span></font></h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">基於創建的密碼的強度基準。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="UKIJ CJK"><span lang="zh-CN">複製密碼</span></font></h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><font face="Noto Serif CJK SC"><span lang="zh-CN">將密碼複製到</span></font>Android<font face="Noto Serif CJK SC"><span lang="zh-CN">剪貼板。</span></font></p>
+<p style="margin-bottom: 0mm; line-height: 100%">16<font face="Noto Serif CJK SC"><span lang="zh-CN">秒後，將從</span></font>Android<font face="Noto Serif CJK SC"><span lang="zh-CN">剪貼板中刪除密碼。</span></font></p>
+    ]]></string>
 </resources>

@@ -27,7 +27,7 @@
     <string name = "switchCustom1"> ASCII 1 </string>
     <string name = "switchCustom2"> ASCII 2 </string>
     <string name = "switchCustom3"> ASCII 3 </string>
-    <string name = "editTextNumberCountPassword"> Masukkan Total Password Char (Default 12 Max 9999) </string>
+    <string name = "editTextNumberCountPassword"> Masukkan Total Password Char </string>
     <string name = "buttonGenerate"> Hasilkan </string>
     <string name = "textViewResult"> Hasilnya Di Sini </string>
     <string name = "textViewGaugePassword"> Kata Laluan Kekuatan </string>
@@ -35,7 +35,8 @@
     <string name = "switch09"> 0–9 </string>
     <string name = "switchAZSmall"> a-z </string>
     <string name = "switchAZBig"> A-Z </string>
-    <string name = "editTextTextYourCustomChar"> Masukkan Karakter Kustom Anda </string>
+    <string name = "editTextTextRequiredLetters"> Masukkan Surat Kegemaran Anda </string>
+    <string name = "editTextTextExcludedLetters"> Masukkan Surat Tidak Disukai Anda </string>
     <string name = "switch_extended_ascii"> ASCII yang dilanjutkan </string>
 
     <string name = "string_progress"> Harap Tunggu … </string>
@@ -56,4 +57,218 @@
     <string name = "string_open_source"> Sumber Terbuka </string>
     <string name = "string_source_program"> Program sumber boleh didapati di </string>
     <string name = "text_view_about"> Tentang </string>
+
+    <!-- Help Activity -->
+    <string name="text_view_help">Help</string>
+    <string name="text_view_content_help"><![CDATA[
+<h4 class="western">0-9</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Nombor integer dari
+0 hingga 9 atau nombor ASCII dari 48 hingga 57.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">a-z</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Huruf kecil dari
+nombor a hingga z atau ASCII dari 97 hingga 122.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">A-Z</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Huruf besar dari
+nombor A hingga Z atau ASCII dari 65 hingga 90.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 1</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Simbol <span style="font-weight: normal">
+</span><b> !"#$%&'()*+,-./</b> atau nombor ASCII dari 33
+hingga 47.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 2</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Simbol <b>:;&lt;=&gt;?@</b>
+atau ASCII nombor dari 58 hingga 64.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 3</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Simbol <b>[\]^_`{|}~</b>
+atau ASCII nombor dari 91 hingga 96 dan dari 123 hingga 126.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Dipanjangkan ASCII</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Simbol nombor
+<b>¡¢£¤¥¦§¨©ª«¬&shy;®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ</b>
+atau ASCII dari 161 hingga 254.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Surat yang diperlukan</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Tambahkan aksara /
+huruf / nombor yang diperlukan.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Surat yang dikecualikan</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Karakter / huruf /
+nombor dikecualikan dan tidak akan muncul dalam hasilnya.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Bilangan Huruf / Karakter</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Masukkan bilangan
+watak dalam kata laluan yang akan dibuat. Jumlah watak secara lalai
+adalah 12 aksara. Bilangan maksimum watak boleh menjadi 9999 aksara.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Menjana</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Butang untuk membuat
+kata laluan.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Keputusan</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Kata laluan yang
+telah dibuat akan muncul di bahagian ini.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Kekuatan Kata Laluan</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Tanda aras kekuatan
+kata laluan yang telah dibuat.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Salin Kata Laluan</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Salin kata laluan ke
+Papan Keratan Android.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Selepas 16 saat,
+kata laluan akan dikeluarkan dari Android Clipboard.</p>
+    ]]></string>
 </resources>

@@ -27,7 +27,7 @@
     <string name = "switchCustom1"> ASCII 1 </string>
     <string name = "switchCustom2"> ASCII 2 </string>
     <string name = "switchCustom3"> ASCII 3 </string>
-    <string name = "editTextNumberCountPassword"> Masukkan Total Char Password (Default 12 Max 9999) </string>
+    <string name = "editTextNumberCountPassword"> Masukkan Total Char Password </string>
     <string name = "buttonGenerate"> Hasilkan </string>
     <string name = "textViewResult"> Hasil Di Sini </string>
     <string name = "textViewGaugePassword"> Kata Sandi Kuat </string>
@@ -35,7 +35,8 @@
     <string name = "switch09"> 0–9 </string>
     <string name = "switchAZSmall"> a-z </string>
     <string name = "switchAZBig"> A-Z </string>
-    <string name = "editTextTextYourCustomChar"> Masukkan Karakter Kustom Anda </string>
+    <string name="editTextTextRequiredLetters">Masukkan Huruf yang Diperlukan</string>
+    <string name="editTextTextExcludedLetters">Masukkan Huruf yang Dikecualikan</string>
     <string name = "switch_extended_ascii"> ASCII Diperpanjang </string>
 
     <string name = "string_progress"> Harap Tunggu… </string>
@@ -56,4 +57,115 @@
     <string name = "string_open_source">Sumber Terbuka</string>
     <string name = "string_source_program">Program sumber dapat ditemukan di</string>
     <string name = "text_view_about">Tentang</string>
+
+
+    <!-- Help Activity -->
+    <string name="text_view_help">Bantuan</string>
+    <string name="text_view_content_help"><![CDATA[
+<h4 class="western">
+0-9
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%">Angka Intejer dari <b>0</b>
+sampai <b>9 </b>atau bilangan ASCII <b>dari 48 sampai 57.</b></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">a-z</h4>
+<p style="margin-bottom: 0mm; line-height: 100%">Huruf kecil dari <b>a</b>
+sampai <b>z </b><span style="font-weight: normal">atau bilangan ASCII
+</span><b>dari 97 sampai 122.</b></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">A-Z
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Huruf Kapital dari <b>A</b> sampai <b>Z</b> atau bilangan ASCII <b>dari
+65 sampai 90.</b></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 1
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Simbol <b> !"#$%&'()*+,-./ </b>atau bilangan ASCII <b>dari 33
+sampai 47.</b></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 2
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Simbol <b>:;&lt;=&gt;?@ </b>atau bilangan ASCII <b>dari 58 sampai 64.</b></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 3
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Simbol <b>[\]^_`{|}~ </b>atau bilangan ASCII <b>dari 91 sampai 96</b>
+dan <b>dari 123 sampai 126.</b></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII yang diperpanjang
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Simbol
+<b>¡¢£¤¥¦§¨©ª«¬&shy;®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ
+</b>atau bilangan ASCII <b>dari 161 sampai 254.</b></p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="Times New Roman, sans-serif"><font size="3" style="font-size: 13pt"><i><b>Huruf
+yang diperlukan</b></i></font></font></h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Tambahkan karakter/huruf/angka yang diperlukan.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="Times New Roman, sans-serif"><font size="3" style="font-size: 13pt"><i><b>Huruf
+yang dikecualikan</b></i></font></font></h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Karakter/huruf/angka dikecualikan dan tidak akan muncul pada hasil.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="Times New Roman, sans-serif"><font size="3" style="font-size: 13pt"><i><b>Jumlah
+Huruf/Karakter</b></i></font></font></h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Masukkan jumlah karakter pada password yang akan di buat. Total
+karakter secara default berjumlah <b>12</b> karakter. Maksimal
+karakter dapat berjumlah <b>9999 </b>karakter.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Generate</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Tombol untuk membuat password.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="Times New Roman, sans-serif"><font size="3" style="font-size: 13pt"><i><b>Hasil</b></i></font></font>
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Password yang telah dibuat akan muncul di bagian ini.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="Times New Roman, sans-serif"><font size="3" style="font-size: 13pt"><i><b>Kekuatan</b></i></font></font>
+Password
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Tolak ukur kekuatan password yang telah dibuat.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western"><font face="Times New Roman, sans-serif"><font size="3" style="font-size: 13pt"><i><b>Salin</b></i></font></font>
+Password
+</h4>
+<p style="margin-bottom: 0mm; font-weight: normal; line-height: 100%">
+Salin password ke Clipboard Android. Setelah 16 detik, password akan
+dihapus dari Clipboard Android.</p>
+    ]]></string>
 </resources>

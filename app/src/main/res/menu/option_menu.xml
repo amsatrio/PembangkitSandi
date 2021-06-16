@@ -25,7 +25,23 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/my_move"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/dark_theme"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:orderInCategory="100"
+            android:title="Dark Theme"
+            app:showAsAction="never" />
+    </group>
 
+    <item
+        android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:orderInCategory="100"
+        android:title="@string/text_view_help"
+        app:showAsAction="never" />
     <item
         android:id="@+id/about"
         android:icon="@android:drawable/ic_menu_agenda"

@@ -59,6 +59,9 @@ android {
         jvmTarget = '1.8'
     }
     ndkVersion '23.0.7196353 rc2'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {

@@ -20,20 +20,21 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  */
 
 package com.ams64.pembangkitsandi
 
 import android.content.Context
 import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.view.MenuItem
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
 
-class AboutActivity : AppCompatActivity() {
+class HelpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -44,33 +45,20 @@ class AboutActivity : AppCompatActivity() {
         // set your custom theme here before setting layout
         super.setTheme(sharedPreferences.getInt("theme",R.style.Theme_PembangkitSandi))
 
-
         //BACK BUTTON
         // showing the back button in action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        setContentView(R.layout.activity_about)
-        val textViewAbout: TextView = findViewById(R.id.textViewAbout)
-        textViewAbout.text = HtmlCompat.fromHtml(
-            "<h4 style=\"text-align: left;\">" +
-                    "${getString(R.string.string_version)}</h4>" +
-                    "${packageManager.getPackageInfo(packageName, 0).versionName}<br/>" +
 
-//                    "&nbsp;<h4 style=\"text-align: left;\">" +
-//                    "${getString(R.string.string_author)}</h4>" +
-//                    "AMS64<br/>" +
+        setContentView(R.layout.activity_help)
 
-                    "&nbsp;<h4 style=\"text-align: left;\">" +
-                    "${getString(R.string.string_privacy_policy)}</h4>" +
-                    "<a href=https://ams64pro.blogspot.com/p/privacy-policy-foss-app.html>" +
-                    "${getString(R.string.string_privacy_policy)}</a><br/>" +
 
-                    "&nbsp;<h4 style=\"text-align: left;\">" +
-                    "${getString(R.string.string_open_source)}</h4>${getString(R.string.string_source_program)}&nbsp;" +
-                    "<a href=https://github.com/amsatrio/PembangkitSandi rel target=_blank>Github</a>",0)
-        textViewAbout.movementMethod = LinkMovementMethod.getInstance()
+        val textViewHelp: TextView = findViewById(R.id.textViewHelp)
+
+        textViewHelp.text = HtmlCompat.fromHtml(
+            getString(R.string.text_view_content_help),0)
+        textViewHelp.movementMethod = LinkMovementMethod.getInstance()
     }
-
 
     //OPTION MENU (TOP RIGHT)
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

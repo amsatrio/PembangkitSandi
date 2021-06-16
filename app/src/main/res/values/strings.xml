@@ -28,7 +28,7 @@
     <string name="switchCustom1">ASCII 1</string>
     <string name="switchCustom2">ASCII 2</string>
     <string name="switchCustom3">ASCII 3</string>
-    <string name="editTextNumberCountPassword">Enter Total Char Password (Default 12 Max 9999)</string>
+    <string name="editTextNumberCountPassword">Total Letters</string>
     <string name="buttonGenerate">Generate</string>
     <string name="textViewResult">Result Here</string>
     <string name="textViewGaugePassword">Strength Password</string>
@@ -36,11 +36,13 @@
     <string name="switch09">0–9</string>
     <string name="switchAZSmall">a-z</string>
     <string name="switchAZBig">A-Z</string>
-    <string name="editTextTextYourCustomChar">Enter Your Custom Character</string>
+    <string name="editTextTextRequiredLetters">Required Letters</string>
+    <string name="editTextTextExcludedLetters">Excluded Letters</string>
     <string name="switch_extended_ascii">Extended ASCII</string>
 
     <string name="string_progress">Please Wait…</string>
-    <string name="string_notif_copy">Your Password Copied to Clipboard. Cleared after 16 second</string>
+    <string name="string_notif_copy">
+        Your Password Copied to Clipboard. Cleared after 16 second</string>
 
 
     <string name="gauge_weak">Weak</string>
@@ -49,7 +51,7 @@
     <string name="gauge_super">Super</string>
     <string name="gauge_super_strong">Super Strong</string>
     <string name="gauge_ultra_strong">Ultra Strong</string>
-    <string name="gauge_smile" translatable="false">:)</string>
+    <string name="gauge_smile" translatable="false">;)</string>
 
 
     <!-- About Activity -->
@@ -59,6 +61,192 @@
     <string name="string_open_source">Open Source</string>
     <string name="string_source_program">Source programs can be found on</string>
     <string name="text_view_about">About</string>
+
+
+    <!-- Help Activity -->
+    <string name="text_view_help">Help</string>
+    <string name="text_view_content_help"><![CDATA[
+<h4 class="western">0-9</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Integer numbers from
+0 to 9 or ASCII numbers from 48 to 57.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">a-z</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Lowercase letters
+from a to z or ASCII numbers from 97 to 122.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">A-Z
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Capital letters from
+A to Z or ASCII numbers from 65 to 90.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 1
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">The symbol <span style="font-weight: normal">
+</span><b> !"#$%&'()*+,-./</b> or ASCII numbers from 33 to
+47.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 2
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">The symbol <b>:;&lt;=&gt;?@</b>
+or ASCII numbers from 58 to 64.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">ASCII 3
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">The symbol
+<b>[\]^_`{|}~</b> or ASCII numbers from 91 to 96 and from 123 to 126.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Extended ASCII
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">The symbol
+<b>¡¢£¤¥¦§¨©ª«¬&shy;®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ</b>
+or ASCII numbers from 161 to 254.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Required letters</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Add the required
+characters/letters/numbers.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Excluded letters</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Characters/letters/numbers
+are excluded and will not appear in the results.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Number of Letters/Characters
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Enter the number of
+characters in the password to be created.
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">The total character
+by default is 12 characters.
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">The maximum number
+of characters can be 9999 characters.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Generate</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Button to create a
+password.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Results
+</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">The password that
+has been created will appear in this section.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Password Strength</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Benchmark the
+strength of the password that has been created.</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<h4 class="western">Copy Password</h4>
+<p style="margin-bottom: 0mm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">Copy the password to
+the Android Clipboard.
+</p>
+<p style="margin-bottom: 0mm; line-height: 100%">After 16 seconds,
+the password will be removed from the Android Clipboard.</p>
+    ]]></string>
 
 
 

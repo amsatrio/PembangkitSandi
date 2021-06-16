@@ -452,7 +452,7 @@ class GeneratorActivity : AppCompatActivity() {
                             this.getSharedPreferences(
                                 "mySharedPreferences", MODE_PRIVATE).edit()
                         sharedPreferencesEditor.putInt("theme",
-                            android.R.style.Theme_Black_NoTitleBar)
+                            R.style.Theme_PembangkitSandiDark)
                         sharedPreferencesEditor.putBoolean("themeConfig",true)
                         sharedPreferencesEditor.apply()
 
